@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="form-title js-form-title">Contact Book</h1>
+    <form class="contact-form js-contact-form" action="#" method="post">
+        <div class="one">
+            <label class="label-name">Name:
+                <input class="inp-name js-inp-name" type="text">
+            </label>
+           <label class="label-select">Relationship
+            <select class= "selects js-select">
+                <option value=" " selected hidden></option>
+                <option class="js-option" value="father">Father</option>
+                <option class="js-option" value="mother">Mother</option>
+                <option class="js-option" value="sister">Sister</option>
+                <option class="js-option"  value="friend">Friend</option>
+                <option class="js-option" value="brother">Brother</option>
+            </select>
+           </label>
+            
+            <label class="label-name">Phone number:
+                <input class=" inp-phone js-inp-phone" type="number" >
+            </label>
+         
+            <button class="form-btn js-btn" type="submit">Add Contact</button>
+        </div>
+       <div class="two">
+        <ul class="lists" id="list">
+            <li class="list-item">
+                <div class="wrap">
+                    <strong class="people-name">Sevinch</strong>
+                    <p class="relationship">Friend</p>
+                    <p class="phone">+998332946007</p>
+                </div>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </li>
+         
+          
+          </ul>
+       </div>
+        <template class="js-list-template">
+            <li class="list-item">
+                <div class="wrap">
+                    <strong class="people-name"></strong>
+                    <p class="relationship"></p>
+                    <p class="phone"></p>
+                </div>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </li>
+          </template> 
+        
+    </form>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
